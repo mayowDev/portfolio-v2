@@ -1,0 +1,29 @@
+@mixin clearfix {
+    &::after{
+        content: "";
+        display: table;
+        clear: both;
+    }
+}
+
+
+.cf:after,
+.cf:before{
+    content: " ";
+    display: table;
+}
+
+@mixin responsive($breakpoint){
+    @if $breakpoint == phone {
+        @media only screen and (max-width: 37.5em){ @content }; //600px to em
+    }
+    @if $breakpoint == tablet {
+        @media only screen and (max-width:56.25em){ @content }; //900px to em
+    }
+    @if $breakpoint == tablet-land {
+        @media only screen and (max-width:75em){ @content }; //1200px to em
+    }
+    @if $breakpoint == big-desktop {
+        @media only screen and (min-width:112.5em){ @content }; //1800px to em
+    }
+}
