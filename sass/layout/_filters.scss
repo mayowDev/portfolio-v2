@@ -23,6 +23,11 @@
         .container{
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(25rem, 3fr));
+            grid-gap: 4rem;
+            @include responsive(phone){
+                width: 100%;
+                grid-template-columns:  minmax(25rem, 1fr);
+            }
             .card{
                 border-radius: .5rem;
                 box-shadow: 0px 0px 57px 0px rgba(4, 6, 9, 0.1);

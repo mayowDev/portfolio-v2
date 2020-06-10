@@ -235,12 +235,12 @@
             </div>
         </div>
       </section>
-      <!--- contacts section --->
-      <section id="contact">
+      <!--- contacts cta --->
+      <section id="contact-cta">
         <div class="wrapper">
             <h2 class="title">Get in touch</h2>
             <p class="sub_title">I'm currently open for a new roles, so please feel free to reach out for any new opportunity </p>
-            <a href="#" class="btn btn--highlight btn--large">Cotact Me</a>
+            <a href="#contact" class="btn btn--highlight btn--large">Cotact Me</a>
         </div>
       </section>   
      
@@ -261,7 +261,42 @@
             <a href="https://www.instagram.com/mayow_dev/" target="_blank"><i class="fab fa-instagram" aria-hidden="true" ></i></a>
           </div>
        </footer>
-      <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+
+      <!-- Contact form popup  Start -->
+      <section class="contact" id="contact">
+        <div class="contact__content">
+            <form action="#" class="form">
+                <div class="u-margin-bottom-medium">
+                    <h2 class="heading-secondary">
+                        Contact Now !
+                    </h2>
+                </div>
+
+                <div class="form__group">
+                    <input type="text" class="form__input" placeholder="Full Name" id="name" required>
+                    <label for="name" class="form__label">Full Name</label>
+                </div>
+
+                <div class="form__group">
+                    <input type="email" class="form__input" placeholder="Email address" id="email" required>
+                    <label for="email" class="form__label">Email address</label>
+                </div>
+
+                <div class="form__group">
+                    <div class="form__group">
+                    <textarea  class="form__text" placeholder="Your Message "id="message" required></textarea>
+                    <label for="message" class="form__label">
+                        Message
+                    </label>
+                    </div>
+
+                <div class="form__group">
+                    <button class="btn btn--green">Say hi  &rarr;</button>
+                </div>
+            </form>
+        </div>
+      </section>
+      <!-- contact ends -->
       <script src="https://use.fontawesome.com/f20164aae0.js"></script>
       <script src="./index.js"></script>
 </body>

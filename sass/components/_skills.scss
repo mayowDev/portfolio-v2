@@ -5,6 +5,10 @@
         grid-template-columns: repeat(auto-fit, minmax(25rem, 3fr));
         gap: 3rem;
     }
+    @include responsive(phone){
+        width: 100%;
+        grid-template-columns:  minmax(35rem, 1fr);
+    }
     padding: 3rem 0 8rem 0;
     position: relative;
     .skill{
@@ -28,6 +32,9 @@
         -webkit-box-shadow: 0px 0px 57px 0px rgba(4, 6, 9, 0.1);
         -moz-box-shadow: 0px 0px 57px 0px rgba(4, 6, 9, 0.1);
         z-index: 10;
+        @include responsive(tablet){
+            margin-top:0 ;
+        }
         h3{
             margin: 0;
             margin-bottom: 1rem;
