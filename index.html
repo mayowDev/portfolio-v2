@@ -54,7 +54,7 @@
             </h2>
             <div class="btn-box">
                 <a href="#projects" class="btn btn--highlight">Portfolio</a>
-                <a href="pdf.pdf" target="_blank" class="btn btn--secondary" >Resume</a>
+                <a href="/doc/pdf.pdf" target="_blank" class="btn btn--secondary" >Resume</a>
             </div>
         </div>
     </header>
@@ -265,33 +265,50 @@
       <!-- Contact form popup  Start -->
       <section class="contact" id="contact">
         <div class="contact__content">
-            <form action="#" class="form">
-                <div class="u-margin-bottom-medium">
-                    <h2 class="heading-secondary">
-                        Contact Now !
-                    </h2>
+            <div class="contact-info">
+                <a href="#contact-cta" class="close">&times;</a>
+                <h2 class="heading-secondary">Contact Now</h2>
+                <div class="info-box"> 
+                    <h5>Skype</h5> 
+                    <p><i class="fa fa-skype" aria-hidden="true"></i>032-34304067</p> 
+                </div> 
+                <div class="info-box"> 
+                    <h5>Email</h5> 
+                    <p><i class="fa fa-envelope" aria-hidden="true"></i>dinnod4@gmail.com</p> 
+                </div> 
+                <div class="info-box"> 
+                    <h5>Location</h5> 
+                    <p> <i class="fa fa-globe" aria-hidden="true"></i> Remote </p> 
+                </div>
+            </div>
+            <form action="./form.php" method="POST" class="form">
+                <h2 class="heading-secondary">
+                    Send Message
+                </h2>
+
+                <div class="form__group">
+                    <input type="text" class="form__input" placeholder="Full Name" name="name" id="name" required>
+                    <!-- <label for="name" class="form__label">Full Name</label> -->
                 </div>
 
                 <div class="form__group">
-                    <input type="text" class="form__input" placeholder="Full Name" id="name" required>
-                    <label for="name" class="form__label">Full Name</label>
+                    <input type="email" class="form__input" placeholder="Email address" id="email" name="email" required>
+                    <!-- <label for="email" class="form__label">Email address</label> -->
                 </div>
-
                 <div class="form__group">
-                    <input type="email" class="form__input" placeholder="Email address" id="email" required>
-                    <label for="email" class="form__label">Email address</label>
+                    <input type="text" class="form__input" placeholder="Subject" id="subject" name="subject" required>
+                    <!-- <label for="email" class="form__label">Email address</label> -->
                 </div>
-
                 <div class="form__group">
                     <div class="form__group">
-                    <textarea  class="form__text" placeholder="Your Message "id="message" required></textarea>
-                    <label for="message" class="form__label">
+                    <textarea rows="18" class="form__text" placeholder="Your Message " name="message" id="message"required></textarea>
+                    <!-- <label for="message" class="form__label">
                         Message
-                    </label>
-                    </div>
+                    </label> -->
+                </div>
 
                 <div class="form__group">
-                    <button class="btn btn--green">Say hi  &rarr;</button>
+                    <button class="form__btn btn btn--highlight btn--large">Send Message  &rarr;</button>
                 </div>
             </form>
         </div>
